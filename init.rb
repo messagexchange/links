@@ -7,5 +7,5 @@ Redmine::Plugin.register :links do
   author_url 'https://github.com/messagexchange'
 
   # link for top menu to display an issues link to all issues on the site.
-  menu :top_menu, :issues, { :controller => 'issues', :action => 'index'}, :caption => 'Issues'
+  menu :top_menu, :issues, { :controller => 'issues', :action => 'index', 'project_id' => nil }, :caption => 'Issues'
 end
